@@ -1,0 +1,156 @@
+/*common style*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 16px;
+	font-family: Microsoft YaHei,Helvetica,Arial,Georgia, sans-serif;
+	background: #e6e6e6;
+	color: #333;
+	padding: 10px 0;
+}
+.clear:before, .clear:after {
+	content:"";
+	display:table;
+}
+.clear:after,.clear:before {
+	clear:both;
+}
+.clear {
+	zoom:1; /* IE < 8 */
+}
+h3{
+	font-size: 16px
+}
+
+/*layout*/
+#wrap{
+	position: relative;
+	width: 920px;
+	margin: 0 auto;
+	background: #fefefe;
+	border-right: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}
+#head{
+	position: relative;
+	border-bottom: 3px solid #666;
+	padding: 15px;
+	-webkit-box-shadow: 0 3px 3px #ccc;
+	-moz-box-shadow: 0 3px 3px #ccc;
+	box-shadow: 0 3px 3px #ccc;
+	background: #f0f0f0 url(../image/icon_m.png) no-repeat 15px 15px;
+}
+#head h3{
+	color: #555;
+	font-size: 30px;
+	padding: 9px 0 20px 50px;
+}
+#head .buid{
+	position: absolute;
+	right: -1px;
+	top: 0;
+	border-right: 1px solid #aaa;
+	color: #f6f6f6;
+	padding: 5px 10px;
+	background: #05a4ff;
+	font-size: 20px;
+}
+#head p{
+	color: #666;
+	font-size: 14px;
+	line-height: 1.6em;
+	text-indent: 2em;
+}
+#head a{
+	color: #666;
+}
+#head a:hover{
+	color: #444;
+}
+#cont{
+	padding: 25px 10px
+}
+#cont h3{
+	color: #05a4ff;
+	padding-bottom: 10px;
+}
+#cont b{
+	padding: 0 5px;
+	font-size: 18px;
+}
+#cons{
+	float: left;
+	width: 630px;
+	margin: 10px;
+	line-height: 1.5em;
+	color: #666;
+	font-size: 14px;
+}
+#emul{
+	cursor: pointer;
+	text-decoration: underline;
+	float: left;
+	line-height: 1.5em;
+	width: 200px;
+}
+#emul:hover{
+	color: #0584ff;
+}
+#cons ol{
+	padding-left: 1.5em;
+}
+#cons .more{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#cons .more:hover{
+	color: #444;
+}
+#cont .frame{
+	position: absolute;
+	opacity: 0;
+	width: 300px;
+	height: 540px;
+	padding: 30px 20px;
+	background: #999;
+	-webkie-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	border: 3px solid #444;
+	-webkit-box-shadow: 2px 2px 10px #888;
+	-moz-box-shadow: 2px 2px 10px #888;
+	box-shadow: 2px 2px 10px #888;
+	cursor: move;
+	left: 290px;
+	top: -600px;
+}
+#cont .frame_mask{
+	position: absolute;
+	width: 300px;
+	height: 340px;
+	padding-top: 200px;
+	left: 20px;
+	top: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 2em;
+	overflow: hidden;
+	background: #555 url(../image/icon.png) no-repeat 50% 20%;
+}
+#cont iframe{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #bbb;
+	border-top-color: #666;
+	border-left-color: #666;
+}
+#foot{
+	color: #555;
+	background: #f0f0f0;
+	border-top: 2px solid #e5e5e5;
+	font-size: 14px;
+	padding: 10px 10px 30px;
+}
