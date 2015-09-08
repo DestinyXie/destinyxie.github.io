@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html class="page_index">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;padding: 0}
+		html,body{height: 100%}
+		.wrap{width: 1200px;margin: 0 auto;position: relative;}
+		iframe{position: absolute;top:-550px;border: 1px solid #333;z-index: 2;}
+		#if2{left: 600px;top: -500px;}
+		#if3{top: -20px;z-index:1;}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<iframe id="if1" src="http://esf.sh.soufun.com/house/a21/" width="600" height="900"></iframe>
+	<iframe id="if2" src="http://sh.58.com/fengxiansh/ershoufang/0/" width="600" height="850"></iframe>
+	<iframe id="if3" src="http://sh.ganji.com/fang5/fengxian/a1/" width="600" height="1500"></iframe>
+</div>
+<script type="text/javascript">
+	function $(id) {
+		return document.getElementById(id);
+	}
+	setInterval(function(){
+		$('if1').src="http://esf.sh.soufun.com/house/a21/";
+		$('if2').src="http://sh.58.com/fengxiansh/ershoufang/0/";
+		$('if3').src="http://sh.ganji.com/fang5/fengxian/a1/";
+	},10000);
+</script>
+</body>
+</html>

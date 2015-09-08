@@ -1,0 +1,145 @@
+html,body{
+	background: #f0f1f4;
+}
+#content { width: 960px;margin: 20px auto;}
+.clear:before, .clear:after {
+	content:"";
+	display:table;
+}
+.clear:after,.clear:before {
+	clear:both;
+}
+.clear {
+	zoom:1; /* IE < 8 */
+}
+/*head*/
+#head{
+	height:45px;
+	position: relative;
+	background: #666;
+	border: 1px solid #555;
+	vertical-align: middle;
+	-webkit-box-shadow:  1px 1px 3px #555;
+    box-shadow:  1px 1px 3px #555;
+}
+.searchLabel{
+	font-size: 14px;
+	color: #eee;
+	line-height: 36px
+}
+#searchLabel{
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px
+}
+.flashBtn{
+	float:right;
+	border-left:1px solid #444;
+	background-color: #49d964;
+	padding: 2px;
+	height: 41px;
+}
+.progressWrap{
+	display: none;
+	z-index: 100;
+	position: absolute;
+	top:-2px;
+	left:-2px;
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+    background: #999;
+	border: 3px solid #333;
+}
+.progressWrap .button{
+	height: 35px;
+	padding: 5px;
+	background: #555;
+	-webkit-box-shadow:  0 2px 3px #333;
+    box-shadow:  0 2px 3px #333;
+}
+.progressWrap .button a{
+	display: inline-block;
+	padding: 4px 16px;
+	border: 1px solid #333;
+	background: #fefefe;
+	text-decoration: none;
+	color: #333;
+}
+.progressWrap .button a:hover{
+	border: 1px solid #222;
+	background: #cecece;
+}
+#fsUploadProgress{
+	padding-top: 10px;
+}
+
+/*gallery*/
+#gallery{
+	padding-top: 20px;
+}
+.imgcolumn{
+	float: left;
+}
+.imgwrap{
+	background-color: #fdfdfd;
+	padding:4px;
+	border: 1px solid #bbb;
+	border-color: #ccc #bbb #bbb #ccc;
+	margin: 5px 5px 8px 5px;
+	-webkit-box-shadow:  1px 1px 3px #ccc;
+    box-shadow:  1px 1px 3px #ccc;
+}
+.imgwrap img{
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.imgwrap .label{
+	padding: 10px 0 5px;
+	color: #555;
+	font-size: 14px;
+}
+.imgwrap label{
+	display: block;
+	line-height: 20px;
+	height: 100%;
+	padding: 3px 4px;
+}
+.imgwrap label.hover{
+	cursor: pointer;
+	background-color: #ffdb83;
+}
+.imgwrap input{
+	display: none;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	line-height: 20px;
+	color: #555;
+	font-size: 14px;
+	border: 1px solid #bbb;
+}
+
+/*手持设备*/
+.phone{
+	margin: 0;
+	padding: 0;
+}
+.phone .head{
+	height: 90px;
+}
+.phone #content{
+	margin-top: 0;
+}
+.phone #searchLabel{
+	width: 100px;
+}
+.handset{
+	float: right;
+	display: none;
+	width: 160px;
+	overflow: hidden;
+}
+.handset input{
+	width: 160px
+}
